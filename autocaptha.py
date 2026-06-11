@@ -4,12 +4,16 @@ import requests
 import io
 import time
 
-
 def do_captcha():
     print("5 seconds till it screenshots...")
     time.sleep(5)
 
-    screenshot = pyautogui.screenshot()
+    screenshot = pyautogui.screenshot(region=(88, 202, 392, 569))#done
+    #test script found the area
+    # Point(x=88, y=202)
+    # Point(x=88, y=202)
+    # Point(x=480, y=771)
+    # Point(x=480, y=771)
     img_byte_arr = io.BytesIO()
     screenshot.save(img_byte_arr, format='PNG')
     img_byte_arr.seek(0)
