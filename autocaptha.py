@@ -26,7 +26,7 @@ def do_captcha():
         pyautogui.click()
 
 
-API_URL = "https://3623e70dd3d7c7c6-8-231-48-199.serveousercontent.com/predict"
+API_URL = "https://ee9bcd224db604fd-34-50-177-164.serveousercontent.com/predict"
 
 
 def ai_prediction(image_buffer):
@@ -47,21 +47,19 @@ def ai_prediction(image_buffer):
         return []
 
     target_label = None
-    if "traffic light" in captcha_text:
-        target_label = "traffic light"
-    elif "car" in captcha_text or "vehicle" in captcha_text:
-        target_label = "car"
-    elif "bus" in captcha_text:
-        target_label = "bus"
-    elif "fire hydrant" in captcha_text:
-        target_label = "fire hydrant"
+    for item in boxes_list: #2 for loops redundant i know -_- but more dynamic than my if statemetns
+        label = item["label"]
+
+        if label.lower() in captcha_text:
+            target_label = label
+            break
 
     print(f"Targeting class: {target_label}")
 
     predictions = []
     for item in boxes_list:
         label = item["label"]
-        cx, cy, w, h = item["coords"]
+        cx, cy, w, h = item["cords"]
 
         if target_label and label == target_label:
             predictions.append((int(cx), int(cy)))
