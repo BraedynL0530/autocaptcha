@@ -25,12 +25,13 @@ def do_captcha():
         return
 
     for cords in coordinates:
-        print(f"Clicking valid target at {cords}")
-        pyautogui.moveTo(cords[0], cords[1])
+        print(f"Clicking valid target at {cords[0] + 88}, {cords[1] + 202}")
+        pyautogui.moveTo(cords[0] + 88, cords[1] + 202) # forgot i cropped so causing issues with conversions ill try this and if that doesnt work ill do better conversion
+        time.sleep(0.5)
         pyautogui.click()
 
 
-API_URL = "https://ee9bcd224db604fd-34-50-177-164.serveousercontent.com/predict"
+API_URL = "https://8928c17a9a4d3542-34-11-252-240.serveousercontent.com/predict"
 
 
 def ai_prediction(image_buffer):
