@@ -17,7 +17,7 @@ def do_captcha():
     coordinates = ai_prediction(img_byte_arr)
 
     if not coordinates:
-        print("No matching targets found to click.")
+        print("No matching targets")
         return
 
     for cords in coordinates:
@@ -26,7 +26,7 @@ def do_captcha():
         pyautogui.click()
 
 
-API_URL = "https://b66f9cf4381b1e47-35-186-144-238.serveousercontent.com/predict"
+API_URL = "https://3623e70dd3d7c7c6-8-231-48-199.serveousercontent.com/predict"
 
 
 def ai_prediction(image_buffer):
