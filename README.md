@@ -78,7 +78,7 @@ A simple utility script for testing and debugging:
    - **Windows:** Download from [GitHub Tesseract releases](https://github.com/UB-Mannheim/tesseract/wiki)
 
 3. **Set up the backend:**
-   - Run the Jupyter notebook `SuperCoolCaptchaBot.ipynb` in Google Colab or a local Jupyter environment
+   - Run the Jupyter notebook `SuperCoolCaptchaBot.ipynb` in Google Colab or a local Jupyter environment (will need 
    - The notebook will start the FastAPI server and expose it via SSH tunneling
 
 4. **Update the API URL:**
@@ -113,7 +113,7 @@ A simple utility script for testing and debugging:
    - Clicks on all objects whose label appears in the prompt
 
 ## Notes & Limitations
-
+- **AI Usage**: Ai assited with tunnell along side with me and boiler platecode
 - **Hardcoded Coordinates**: Screenshot region and object coordinates are hardcoded and need calibration per screen/resolution
 - **Model Specific**: Trained/configured for specific CAPTCHA types
 - **API Dependency**: Client requires the backend server to be running and accessible
