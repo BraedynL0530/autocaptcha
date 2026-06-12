@@ -1,6 +1,6 @@
 # AutoCaptcha
 
-A proof-of-concept automated CAPTCHA solver that uses computer vision and OCR to detect and solve image-based CAPTCHAs.
+A proof-of-concept automated CAPTCHA solver that uses computer vision and OCR to detect and solve image-based CAPTCHAs. not very good but fun
 
 ## Overview
 
