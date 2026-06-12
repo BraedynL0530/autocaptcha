@@ -3,7 +3,7 @@
 A proof-of-concept automated CAPTCHA solver that uses computer vision and OCR to detect and solve image-based CAPTCHAs. not very good but fun
 
 ## Overview
-
+![App Demo](demoo.gif)
 AutoCaptcha is an experimental project that combines object detection (YOLOv11) and optical character recognition (Tesseract) to automatically identify and click on CAPTCHA elements. The system consists of a backend API service and a client automation script.
 
 ## Features
