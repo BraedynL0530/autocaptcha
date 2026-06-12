@@ -31,7 +31,7 @@ def do_captcha():
         pyautogui.click()
 
 
-API_URL = "https://8928c17a9a4d3542-34-11-252-240.serveousercontent.com/predict"
+API_URL = "https://e2ced266dd8ee664-34-125-9-196.serveousercontent.com/predict"
 
 
 def ai_prediction(image_buffer):
